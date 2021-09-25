@@ -21,8 +21,8 @@ const Dashboard = () => {
         Phone Number
       </Form.Label>
       <InputGroup className="mb-2">
-        <InputGroup.Text>@</InputGroup.Text>
-        <FormControl id="inlineFormInputGroup" placeholder="Username" />
+        <InputGroup.Text>#</InputGroup.Text>
+        <FormControl id="inlineFormInputGroup" placeholder="Phone Number" />
       </InputGroup>
     </Col>
    
