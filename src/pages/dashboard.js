@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom'
 
 import {Card, Form,Button} from 'react-bootstrap';
 
-function Dashboard () {
+const Dashboard = () => {
   const history = useHistory();
 
   const onClickBtn = () => {

@@ -1,8 +1,15 @@
 import React from 'react';
-import {Card} from 'react-bootstrap';
+import {Card,Button} from 'react-bootstrap';
+import {useHistory} from 'react-router-dom'
 
-const Details = () => (
+
+const Details = () => {
+  const history = useHistory();
+
+  return(
   <div className="DetailPage">
+
+  <Button onClick={()=>history.goBack()}>&lt; Back </Button>
     {/* nav bar with back button */}
     
 {/* text box with ....text */}
@@ -15,6 +22,7 @@ const Details = () => (
   </Card.Body>
 </Card>
   </div>
-);
+  )
+};
 
 export default Details;
