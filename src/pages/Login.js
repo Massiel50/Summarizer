@@ -18,13 +18,20 @@ const Login = () => {
                 />
               </Form.Group>
               <br/> 
+              <Form.Group>
+                <Form.Label>Password</Form.Label>
+                <Form.Control 
+                  type="text" 
+                  placeholder="Enter password" 
+                />
+              </Form.Group>
+              <br/> 
               <Button className="btn-success" variant="standard" >
                 Go
               </Button>
             </Card.Body>
           </Card>
         </Col>
-
       </Row>
       </MainLayout> )
 } 
