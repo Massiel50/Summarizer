@@ -2,6 +2,7 @@ import './App.css';
 
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
+import Details from "./pages/Details";
 import NotFound from "./pages/NotFound";
 
 import {
@@ -15,7 +16,9 @@ const App= () => (
     <div className="container">
       <Switch>
         <Route exact path="/"  component={Login}/>
-        <Route path="/Dashboard" render={() => <Dashboard />} />
+        <Route path="/dashboard" render={() => <Dashboard />} />
+        <Route path="/details" render={() => <Details />} />
+
         <Route component={NotFound} />
       </Switch>
 
