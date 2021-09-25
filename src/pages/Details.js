@@ -10,7 +10,7 @@ const Details = () => (
   <Card.Body>
     <Card.Title>Call Title</Card.Title>
     <Card.Text>
-      Some summary of some call
+      Some summary of some call from somewhere
     </Card.Text>
   </Card.Body>
 </Card>
