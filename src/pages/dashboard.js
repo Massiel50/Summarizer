@@ -2,7 +2,7 @@ import React from "react";
 
 import {Card, Form,Button} from 'react-bootstrap';
 
-function dashboard () {
+function Dashboard () {
   return (
   <><div className="dashcards" /><div>
 
@@ -19,7 +19,7 @@ function dashboard () {
 <Card body>
 <div className="d-grid gap-2">
   <Button variant="secondary" size="lg">
-    Some Phone number
+    Call Date/ time info
   </Button>
 </div>
 </Card>
@@ -27,7 +27,7 @@ function dashboard () {
 <Card body>
 <div className="d-grid gap-2">
   <Button variant="secondary" size="lg">
-    Some Phone number
+  Call Date/ time info
   </Button>
 </div>
 </Card>
@@ -35,7 +35,7 @@ function dashboard () {
 <Card body>
 <div className="d-grid gap-2">
   <Button variant="secondary" size="lg">
-    Some Phone number
+  Call Date/ time info
   </Button>
 </div>
 </Card>
@@ -43,4 +43,4 @@ function dashboard () {
   )
 };
 
-export default dashboard;
+export default Dashboard;
