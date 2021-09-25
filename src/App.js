@@ -1,6 +1,6 @@
 import './App.css';
 
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/dashboard";
 import Login from "./pages/Login";
 import Details from "./pages/Details";
 import NotFound from "./pages/NotFound";
@@ -21,7 +21,6 @@ const App= () => (
         <Route path="/details" render={() => <Details />} />
         <Route component={NotFound} />
       </Switch>
-
     </div>
     </Router>
   );
