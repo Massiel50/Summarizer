@@ -9,13 +9,12 @@ import {
   Switch
 } from 'react-router-dom';
 
-
 const App= () => (
   <Router>
     <div className="container">
       <Switch>
         <Route exact path="/"  component={Login}/>
-        <Route path="/dashboard" render={() => <Dashboard />} />
+        <Route path="/Dashboard" render={() => <Dashboard />} />
         <Route component={NotFound} />
       </Switch>
 
