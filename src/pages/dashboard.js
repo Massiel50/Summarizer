@@ -2,7 +2,7 @@ import React from "react";
 
 import {Card, Form,Button} from 'react-bootstrap';
 
-function Dashboard () {
+function dashboard () {
   return (
   <><div className="dashcards" /><div>
 
@@ -43,4 +43,4 @@ function Dashboard () {
   )
 };
 
-export default Dashboard;
+export default dashboard;

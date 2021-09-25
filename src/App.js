@@ -1,6 +1,6 @@
 import './App.css';
 
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/dashboard";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import {
