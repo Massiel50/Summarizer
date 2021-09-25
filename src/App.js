@@ -18,10 +18,8 @@ const App= () => (
         <Route exact path="/"  component={Login}/>
         <Route path="/dashboard" render={() => <Dashboard />} />
         <Route path="/details" render={() => <Details />} />
-
         <Route component={NotFound} />
       </Switch>
-
     </div>
     </Router>
   );
