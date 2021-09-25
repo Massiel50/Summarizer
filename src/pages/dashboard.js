@@ -1,10 +1,17 @@
 import React from "react";
+import {useHistory} from 'react-router-dom'
+
 import {Card, Form,Button} from 'react-bootstrap';
 
-
 function Dashboard () {
+  const history = useHistory();
+
+  const onClickBtn = () => {
+    history.push('/details');
+
+  }
   return (
-  <><div className="dashcard" /><div>
+  <><div className="dashcards" /><div>
 
     {/* section to input phone number and submit button */}
     <Card>
@@ -16,11 +23,29 @@ function Dashboard () {
 </Card>
 
 {/* section where a list of things are displayed */}
-<Card body>This is some text within a card body.</Card>
+<Card body>
+<div className="d-grid gap-2">
+  <Button onClick={()=> onClickBtn()} variant="secondary" size="lg">
+    Call Date/ time info
+  </Button>
+</div>
+</Card>
 
-<Card body>This is some text within a card body.</Card>
+<Card body>
+<div className="d-grid gap-2">
+  <Button onClick={()=> onClickBtn()} variant="secondary" size="lg">
+  Call Date/ time info
+  </Button>
+</div>
+</Card>
 
-<Card body>This is some text within a card body.</Card>
+<Card body>
+<div className="d-grid gap-2">
+  <Button  onClick={()=> onClickBtn()} variant="secondary" size="lg">
+  Call Date/ time info
+  </Button>
+</div>
+</Card>
   </div></>
   )
 };
