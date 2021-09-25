@@ -6,10 +6,6 @@ const MainLayout = ({ children }) => {
      <>
       <Navbar bg="light" variant="light" className="mb-4">
         <Navbar.Brand href="/">Meeting Summarizer</Navbar.Brand>
-
-        <Nav>
-        </Nav>
-
       </Navbar>
       <Container>
         {children}
