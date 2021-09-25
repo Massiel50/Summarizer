@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 
-function dashboard () {
+function Dashboard () {
   return (
   <><div className="dashcards" /><div>
 
@@ -26,4 +26,4 @@ function dashboard () {
   )
 };
 
-export default dashboard;
+export default Dashboard;

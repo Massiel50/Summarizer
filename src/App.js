@@ -1,11 +1,10 @@
 import './App.css';
-import dashboard from "./pages/dashboard";
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
     <div className="App">
-      
-      <div dashboard />
+      <Dashboard />
     </div>
   );
 }
