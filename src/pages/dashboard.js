@@ -1,7 +1,7 @@
 import React from "react";
 import {useHistory} from 'react-router-dom'
 
-import {Card, Form,Button} from 'react-bootstrap';
+import {Button, Col, Form, Row, Card, InputGroup, FormControl} from 'react-bootstrap';
 
 const Dashboard = () => {
   const history = useHistory();
@@ -14,13 +14,25 @@ const Dashboard = () => {
   <><div className="dashcards" /><div>
 
     {/* section to input phone number and submit button */}
-    <Card>
-    <Card.Header as="h5">Give me your phone number</Card.Header>
-    <Card.Body>
-      <Form.Control type="text" placeholder="Readonly input here..." readOnly />
-        <Button variant="primary">Submit</Button>
-    </Card.Body>
-</Card>
+    <Form>
+  <Row className="align-items-center">
+    <Col xs="auto">
+      <Form.Label htmlFor="inlineFormInputGroup" visuallyHidden>
+        Phone Number
+      </Form.Label>
+      <InputGroup className="mb-2">
+        <InputGroup.Text>@</InputGroup.Text>
+        <FormControl id="inlineFormInputGroup" placeholder="Username" />
+      </InputGroup>
+    </Col>
+   
+    <Col xs="auto">
+      <Button type="submit" className="mb-2">
+        Submit
+      </Button>
+    </Col>
+  </Row>
+</Form>
 
 {/* section where a list of things are displayed */}
 <Card body>
