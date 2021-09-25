@@ -21,7 +21,7 @@ function Dashboard () {
 <Card body>
 <div className="d-grid gap-2">
   <Button variant="secondary" size="lg">
-    Some Phone number
+    Call Date/ time info
   </Button>
 </div>
 </Card>
@@ -29,7 +29,7 @@ function Dashboard () {
 <Card body>
 <div className="d-grid gap-2">
   <Button variant="secondary" size="lg">
-    Some Phone number
+  Call Date/ time info
   </Button>
 </div>
 </Card>
@@ -37,7 +37,7 @@ function Dashboard () {
 <Card body>
 <div className="d-grid gap-2">
   <Button variant="secondary" size="lg">
-    Some Phone number
+  Call Date/ time info
   </Button>
 </div>
 </Card>
