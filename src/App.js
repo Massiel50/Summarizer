@@ -2,11 +2,13 @@ import './App.css';
 
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
+import Details from "./pages/Details";
+
 import NotFound from "./pages/NotFound";
 import {
   BrowserRouter as Router,
   Route,
-  Switch
+  Switch,
 } from 'react-router-dom';
 
 
@@ -16,6 +18,7 @@ const App = () => (
       <Switch>
         <Route exact path="/"  component={Login}/>
         <Route path="/dashboard" render={() => <Dashboard />} />
+        <Route path="/details" render={() => <Details />} />
         <Route component={NotFound} />
       </Switch>
 
