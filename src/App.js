@@ -11,8 +11,8 @@ import {
   Switch,
 } from 'react-router-dom';
 
+const App= () => (
 
-const App = () => (
   <Router>
     <div className="container">
       <Switch>
