@@ -16,12 +16,6 @@ function Dashboard () {
     </Card.Body>
 </Card>
 
-      <Card.Header as="h5">Give me your phone number sweet stuff</Card.Header>
-      <Card.Body>
-        <Form.Control type="text" placeholder="Readonly input here..." readOnly />
-        <Button variant="primary" type= "submit">Submit</Button>
-      </Card.Body>
-    </Card>
 
 
 {/* section where a list of things are displayed */}
