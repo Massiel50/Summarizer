@@ -1,6 +1,7 @@
 import React from "react";
 
-const dashboard = props => (
+function dashboard () {
+  return (
   <><div className="dashcard" /><div>
     <Card body>
     <Form.Control type="text" placeholder="Readonly input here..." readOnly />
@@ -14,6 +15,7 @@ const dashboard = props => (
 </>
     </Card>
   </div></>
-);
+  )
+};
 
 export default dashboard;
