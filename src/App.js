@@ -15,7 +15,7 @@ import {
 const App= () => (
 
   <Router>
-    <div className="container wrapper">
+    <div className="container" id="wrapper">
       <Switch>
         <Route exact path="/"  component={Login}/>
         <Route path="/dashboard" render={() => <Dashboard />} />

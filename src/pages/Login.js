@@ -16,7 +16,7 @@ const Login = () => {
      <Row className="justify-content-center">
         <Col lg={6} md={8}>
           <Card>
-            <Card.Body>
+            <Card.Body id="login-card-body">
               <Form.Group>
                 <Form.Label>Phone Number</Form.Label>
                 <Form.Control 
@@ -33,7 +33,7 @@ const Login = () => {
                 />
               </Form.Group>
               <br/> 
-              <Button onClick={()=>goBtn()} className="btn-success" variant="standard" >
+              <Button id= "loginBtn" onClick={()=>goBtn()} className="btn-success" variant="standard" >
                 Go
               </Button>
             </Card.Body>

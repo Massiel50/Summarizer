@@ -61,7 +61,7 @@ console.log(data)
 {/* section where a list of things are displayed */}
 {sessions.map(session => { {
 
-  return <Card body key={session.id}>
+  return <Card id="card-info" body key={session.id}>
 <div className="d-grid gap-2">
 
 <h3>{session.call_summary}</h3>

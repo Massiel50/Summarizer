@@ -1,5 +1,36 @@
-.wrapper{
-    border:2px solid red;
-    height: 100vh;
+/* Overwrite Bootstrap styles */
+/* changes login page */
+html,body{
+    height: 100%;
+}
+/* changes dashboard */
+#root{
+   height: 100%;
+}
+
+#wrapper{
+    background-image: linear-gradient(#B509EB, #7D0AF5);    
+    height: 100%;
     padding:20px 20px 20px 20px;
+    margin:0px 0px;
+    max-width: 100%;
+}
+#navbar {
+    --bs-bg-opacity: 0;
+    text-align: center;   
+    display:block;
+}
+
+#login-card-body{
+    padding:10% 10%;
+    height:500px;
+}
+#card-info{
+    margin:20px;
+}
+#navBrand-text {
+color: white
+}
+#loginBtn {
+    background-color: #7D0AF5
 }
