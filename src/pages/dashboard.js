@@ -3,7 +3,8 @@ import {useHistory} from 'react-router-dom'
 
 import {Button, Col, Form, Row, Card, InputGroup, FormControl} from 'react-bootstrap';
 
-const Dashboard = () => {
+
+const Dashboard = (props) => {
   const history = useHistory();
 
   const onClickBtn = () => {
@@ -11,7 +12,8 @@ const Dashboard = () => {
 
   }
   return (
-  <><div className="dashcards" /><div>
+  <div className="dashcards" >
+
 
     {/* section to input phone number and submit button */}
     <Form>
@@ -34,6 +36,8 @@ const Dashboard = () => {
   </Row>
 </Form>
 
+
+
 {/* section where a list of things are displayed */}
 <Card body>
 <div className="d-grid gap-2">
@@ -55,12 +59,12 @@ const Dashboard = () => {
 <div className="d-grid gap-2">
   <Button  onClick={()=> onClickBtn()} variant="secondary" size="lg">
   Call Date/ time info
-
   </Button>
 </div>
 </Card>
-  </div></>
-  )
-};
+  </div>
+)
+}
+
 
 export default Dashboard;

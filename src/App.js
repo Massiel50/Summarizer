@@ -8,10 +8,11 @@ import NotFound from "./pages/NotFound";
 import {
   BrowserRouter as Router,
   Route,
-  Switch
+  Switch,
 } from 'react-router-dom';
 
 const App= () => (
+
   <Router>
     <div className="container">
       <Switch>
