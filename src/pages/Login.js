@@ -7,7 +7,8 @@ import {useHistory} from 'react-router-dom'
 const Login = () => {
     const history = useHistory();
     const goBtn = () => {
-        history.push('/dashboard');
+
+            history.push('/dashboard');
     }
     return (
      <MainLayout>  
