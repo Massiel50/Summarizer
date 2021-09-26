@@ -1,18 +1,25 @@
 
+
+
+export const startCall = (phone ) => { 
+
+
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
-var raw = JSON.stringify({"phone":"14073580380","password":"password"});
 
-var requestOptions = {
-  method: 'POST',
-  headers: myHeaders,
-  body: raw,
-  redirect: 'follow'
-};
+  const  requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: JSON.stringify({phone}),
+    redirect: 'follow'
+  };
+  fetch("https://tadhack2021-user-service.herokuapp.com/start_session", requestOptions)
+  .then(response => response.json())
+}
 
-fetch("https://tadhack2021-user-service.herokuapp.com/login", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
 
+
+export const fetchSessions = async () =>  {
+  return fetch("https://tadhack2021-user-service.herokuapp.com/sessions/1").then(res => res.json())
+}

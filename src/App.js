@@ -1,4 +1,5 @@
 import './App.css';
+import './style.css';
 
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
@@ -14,7 +15,7 @@ import {
 const App= () => (
 
   <Router>
-    <div className="container">
+    <div className="container wrapper">
       <Switch>
         <Route exact path="/"  component={Login}/>
         <Route path="/dashboard" render={() => <Dashboard />} />

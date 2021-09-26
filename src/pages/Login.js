@@ -1,13 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Button, Col, Form, Row, Card} from "react-bootstrap"
 import MainLayout from '../layouts/MainLayout'
 import {useHistory} from 'react-router-dom'
 
 const Login = () => {
 
-    const [phoneState, setphoneState] = useState("");
-
-    const [passwordState, setpasswordState] = useState("");
 
     const history = useHistory();
     const goBtn = () => {
@@ -25,7 +22,6 @@ const Login = () => {
                 <Form.Control 
                   type="text" 
                   placeholder="Enter #"
-                  value= ""
                 />
               </Form.Group>
               <br/> 
@@ -34,13 +30,10 @@ const Login = () => {
                 <Form.Control 
                   type="text" 
                   placeholder="Enter password" 
-                  value= ""
                 />
               </Form.Group>
               <br/> 
-              <Button onClick={(
-                  
-              )=>goBtn()} className="btn-success" variant="standard" >
+              <Button onClick={()=>goBtn()} className="btn-success" variant="standard" >
                 Go
               </Button>
             </Card.Body>
